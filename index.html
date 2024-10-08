@@ -4,6 +4,207 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sevillanas</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(255, 197, 118) 0%,
+          rgb(254, 106, 103) 47.7%,
+          rgb(240, 23, 23) 92.3%
+        );
+      }
+      .container {
+        background: white;
+        border-radius: 16px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 20px auto;
+        max-width: 600px;
+        padding: 20px 40px 40px 40px;
+      }
+      button {
+        border: 1px solid lightcoral;
+        border-radius: 40px;
+        display: block;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        transition: all 200ms ease-in-out;
+      }
+      .theme-button {
+        background: black;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        margin: 40px auto;
+        padding: 10px 20px;
+      }
+      .theme-button:hover {
+        background: white;
+        color: black;
+      }
+      .header {
+        color: #e30202;
+        font-size: larger;
+        margin: 50px;
+        text-align: center;
+      }
+      img {
+        border-radius: 10px;
+        max-width: 100%;
+      }
+      .photo-with-link {
+        transition: all 200ms ease-in-out;
+      }
+      .photo-with-link:hover {
+        filter: contrast(50%);
+        transform: scale(1.4);
+      }
+      .grid {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 16px 0;
+      }
+      .grid img {
+        aspect-ratio: 3/2;
+        transition: all 200ms ease-in-out;
+        width: 100%;
+      }
+      .grid img:hover {
+        transform: scale(2);
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.8;
+        padding: 10px 0 0 0;
+      }
+      .links {
+        display: block;
+        font-weight: bold;
+        margin: 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .find-classes-button {
+        background: white;
+        border: 1px solid lightcoral;
+        font-size: 26px;
+        margin: 40px auto 30px auto;
+        padding: 0 15px;
+      }
+      .find-classes-button:hover {
+        background: #fd6461;
+        cursor: pointer;
+      }
+      footer {
+        color: peachpuff;
+        font-size: 18px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 10px 0 20px 0;
+        text-align: center;
+      }
+      .dark {
+        background: radial-gradient(
+          circle at 24.1% 68.8%,
+          rgb(50, 50, 50) 0%,
+          rgb(0, 0, 0) 99.4%
+        );
+        color: white;
+      }
+      .dark .container {
+        background: radial-gradient(
+          circle at 68.8% 24.1%,
+          rgb(50, 50, 50) 0%,
+          rgb(0, 0, 0) 99.4%
+        );
+      }
+      .dark .header {
+        color: white;
+      }
+      .dark a {
+        color: lightcoral;
+      }
+      .dark .find-classes-button {
+        background: black;
+        color: lightcoral;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <div class="header">
+        <h1>Sevillanas 💃🏽</h1>
+        <h2>My favourite regional dance</h2>
+      </div>
+      <a href="https://en.wikipedia.org/wiki/Sevillanas" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/337/original/Sevillanas-1.jpg?1716540307.jpg?1716224919"
+          alt="Sevillanas-1"
+          class="photo-with-link"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/164/original/Sevillanas-2.jpg?1716364995"
+          alt="Sevillanas-2"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/988/original/Sevillanas-3.jpg?1716224935"
+          alt="Sevillanas-3"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/989/original/Sevillanas-4.jpg?1716224943"
+          alt="Sevillanas-4"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/990/original/Sevillanas-5.jpeg?1716224951"
+          alt="Sevillanas-5"
+        />
+      </div>
+      <p>
+        Sevillanas could be defined as a typical Andalusian music and dance of a
+        festive nature that is usually danced as a couple and whose main stage
+        is fairs and pilgrimages. In addition, they are considered the regional
+        dance of Andalusia.
+        <br />
+        Sevillanas are usually danced in couples (with or without castanets),
+        although they can also be danced in groups. While dancing, there is very
+        little to no physical contact between dancers.
+        <br />
+        <a
+          href="https://www.studioflamenco.com/sevillanas"
+          target="_blank"
+          class="links"
+        >
+          <strong>📖 Learn more about Sevillanas</strong>
+        </a>
+
+        <a
+          href="https://www.youtube.com/watch?v=X50M7joFrzA"
+          target="_blank"
+          class="links"
+        >
+          <strong> 🎥 What the dance looks like</strong>
+        </a>
+      </p>
+      <button class="find-classes-button">
+        <a
+          href="https://www.google.es/?q=sevillanas+classes+near+me"
+          target="_blank"
+          class="links"
+          >Find a class near you</a
+        >
+      </button>
+    </div>
+    <footer>Coded with 💖 by Eliana Zaharia-Danicov</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark");
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
 </html>
